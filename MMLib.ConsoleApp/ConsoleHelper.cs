@@ -14,7 +14,7 @@ namespace MMLib.ConsoleApp
         /// </summary>
         public static void PromptForContinue()
         {
-            Console.Write("Press any key continue: ");
+            Console.Write(Properties.Resources.PressAnyKey);
             Console.ReadKey();
         }
 

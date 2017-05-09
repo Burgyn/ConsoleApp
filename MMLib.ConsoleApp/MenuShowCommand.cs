@@ -64,13 +64,13 @@ namespace MMLib.ConsoleApp
             foreach (var item in _menu.Items)
             {
                 Console.ForegroundColor = item.Foreground;
-                Console.WriteLine($"{KeyToString(item.Key)}: {item.Command.Header}");
+                Console.WriteLine($"{KeyToString(item.Key),-6}: {item.Command.Header}");
             }
 
             PrintEndChoice();
 
             Console.WriteLine();
-            Console.Write("Your choice:");
+            Console.Write(Properties.Resources.YourChoice);
 
             Console.ForegroundColor = actualForeground;
         }
@@ -80,11 +80,11 @@ namespace MMLib.ConsoleApp
             Console.WriteLine("...");
             if (_isSubMenu)
             {
-                Console.WriteLine($"{ConsoleKey.Backspace}: Back to main menu");
+                Console.WriteLine($"{ConsoleKey.Backspace,-6}: {Properties.Resources.Back}");
             }
             else
             {
-                Console.WriteLine($"{ConsoleKey.Escape}: Exit app");
+                Console.WriteLine($"{ConsoleKey.Escape,-6}: {Properties.Resources.Back}");
             }
         }
 
