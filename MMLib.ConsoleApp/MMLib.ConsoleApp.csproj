@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>Miňo Martiniak</Authors>
+    <Company>MMLib</Company>
+    <Product>ConsoleApp</Product>
+    <Description>Lightway package for creating .net console app with menu.</Description>
+    <PackageProjectUrl>https://github.com/Burgyn/ConsoleApp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Burgyn/ConsoleApp</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>Console; ConsoleApp; Menu</PackageTags>
+  </PropertyGroup>
+
+</Project>
