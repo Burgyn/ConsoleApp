@@ -4,7 +4,7 @@ Lightway framework for creating .net console app with menu.
 Nuget
 > PM> Install-Package MMLib.ConsoleApp
 
-Example
+Example:
 ```
 class Program
     {
