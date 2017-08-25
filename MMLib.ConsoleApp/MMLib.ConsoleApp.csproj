@@ -12,8 +12,10 @@
     <RepositoryType>Git</RepositoryType>
     <PackageTags>Console; ConsoleApp; Menu</PackageTags>
     <PackageIconUrl>https://raw.githubusercontent.com/Burgyn/ConsoleApp/master/icon.png</PackageIconUrl>
-    <Version>1.0.1</Version>
-    <PackageReleaseNotes />
+    <Version>1.0.2</Version>
+    <PackageReleaseNotes>Stop cleaning screen</PackageReleaseNotes>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
