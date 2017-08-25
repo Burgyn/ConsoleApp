@@ -13,7 +13,7 @@ namespace MMLib.ConsoleApp
     {
         private readonly bool _isSubMenu;
         private readonly Menu _menu;
-
+        
         /// <summary>
         /// Initializes a new instance of the <see cref="MenuShowCommand" /> class.
         /// </summary>
@@ -44,7 +44,7 @@ namespace MMLib.ConsoleApp
                 }
                 else
                 {
-                    Console.Clear();
+                    ClearConsole();
 
                     var menuItem = _menu.Items.FirstOrDefault(p => p.Key == key.Key);
                     if (menuItem != null)
@@ -57,7 +57,7 @@ namespace MMLib.ConsoleApp
 
         private void PrintMenu()
         {
-            Console.Clear();
+            ClearConsole();
             var actualForeground = Console.ForegroundColor;
             Console.ForegroundColor = _menu.Foreground;
 
@@ -73,6 +73,19 @@ namespace MMLib.ConsoleApp
             Console.Write(Properties.Resources.YourChoice);
 
             Console.ForegroundColor = actualForeground;
+        }
+
+        private void ClearConsole()
+        {
+            if (this._menu.ClearConsoleOnRepaint)
+            {
+                Console.Clear();
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine();
+            }
         }
 
         private void PrintEndChoice()

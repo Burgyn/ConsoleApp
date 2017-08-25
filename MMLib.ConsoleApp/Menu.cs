@@ -14,11 +14,14 @@ namespace MMLib.ConsoleApp
         private List<MenuItem> _items = new List<MenuItem>();
 
         /// <summary>
-        /// Create insntace with <seealso cref="MenuBuilder"/>
+        /// Create instance with <seealso cref="MenuBuilder"/>
         /// </summary>
         private Menu()
         {
+            this.ClearConsoleOnRepaint = true;
         }
+
+        public bool ClearConsoleOnRepaint { get; set; }
 
         /// <summary>
         /// Gets the menu items.
@@ -41,7 +44,7 @@ namespace MMLib.ConsoleApp
 
             internal MenuBuilder()
             {
-
+                this._menu.ClearConsoleOnRepaint = true;
             }
 
             /// <summary>
